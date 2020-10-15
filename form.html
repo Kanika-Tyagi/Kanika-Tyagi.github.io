@@ -1,0 +1,264 @@
+
+<html>
+<body>
+
+
+	<form enctype="multipart/form-data" action="insertTOdb.php" method="post" >
+		     <fieldset>
+			     <legend><u>PERSONAL INFORMATION</u> : </legend>
+			     <br/>
+				 Your Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 
+			     <input type="text" name="f_name" placeholder="JOHN DEMORGAN"  required>
+			     <br/>
+			     <br/>
+				 <!--Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+				 <input type="text" name="l_name" placeholder="DEMORGAN"  required >
+				 <br/>
+				 <br/> -->
+				 E-Mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+				 <input type="email" name="Email" placeholder="JohnD@gmail.com" required>
+				 <br/>
+				 <br/>
+				 Date Of Birth &nbsp;&nbsp;:
+				 <input type="date" name="DOB" required>
+				 <br/>
+				 <br/>
+				 <label>Profile Picture&nbsp;&nbsp;:</label></br> 
+				 <input name="userImage" type="file" required>
+				 <br/>
+				 <br/>
+				 <label>Resume&nbsp;&nbsp;:</label></br> 
+				 <input name="pdf_file" type="file" accept="application/pdf" required>
+				 <br/>
+				 <br/>
+				 About Yourself :</br><textarea name="about" rows="20" cols="70">Descreibe yourself here...</textarea>
+			 </fieldset>
+             <br/>
+             <fieldset>
+			    <legend><u>SOCIAL MEDIA PROFILE LINKS</u> : </legend>
+				<br/>
+				Facebook&nbsp; :
+				<input type="text" name="fb" required>
+				<br/>
+				<br/>
+				LinkedIn &nbsp; :
+				<input type="text" name="in" required>
+				<br/>
+				<br/>
+				Twitter  &nbsp;&nbsp;&nbsp;&nbsp; : 
+				<input type="text" name="twitter"  required>
+				<br/>
+				<br/>
+				Github   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+				<input type="text" name="github" required>
+				<br/>
+				<br/> 
+				Instagram : 
+				<input type="text" name="insta" required>
+		     </fieldset>
+			 <br/>
+			 <fieldset>
+			    <legend><u>SKILLS INFORMATION</u> : </legend>
+				<br/>
+				HTML : <input type="number" name="html">
+				</br>
+				</br>
+				CSS &nbsp;&nbsp;&nbsp;&nbsp;: <input type="number" name="css">
+				</br>
+				</br>
+				PHP &nbsp;&nbsp;&nbsp;&nbsp;: <input type="number" name="php">
+				</br>
+				</br>
+				C++ &nbsp;&nbsp;&nbsp;&nbsp;: <input type="number" name="cpp">
+				</br>
+				</br>
+				Java &nbsp;&nbsp;&nbsp;&nbsp;: <input type="number" name="java">
+				</br>
+				</br>
+				Python : <input type="number" name="python">
+		     </fieldset>
+			 </br>
+			 <fieldset>
+			    <legend><u>MATRICULATION INFORMATION</u> : </legend>
+				<br/>
+				School Name : <input type="text" name="X_school">
+				</br>
+				</br>
+			<!--	Start Month &nbsp;&nbsp;: <input type="text" name="X_sMonth">
+				</br>
+				</br>-->
+				Start Year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="X_startYear">
+				</br>
+				</br>
+			<!--	End Month &nbsp;&nbsp;&nbsp;: <input type="text" name="X_eMonth">
+				</br>
+				</br>-->
+				End Year  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="X_endYear">
+				</br>
+				</br>
+				CGPA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="number"  step="any" name="cgpa">
+		     </fieldset>
+			 </br>
+			 <fieldset>
+			    <legend><u>INTERMEDIATE INFORMATION</u> : </legend>
+				<br/>
+				School Name : <input type="text" name="Xll_school">
+				</br>
+				</br>
+			<!--	Start Month &nbsp;&nbsp;: <input type="text" name="Xll_sMonth">
+				</br>
+				</br>-->
+				Start Year &nbsp;&nbsp;&nbsp;&nbsp; : <input type="text" name="Xll_startYear">
+				</br>
+				</br>
+			<!--	End Month &nbsp;&nbsp;&nbsp;: <input type="text" name="Xll_eMonth">
+				</br>
+				</br>-->
+				End Year  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="Xll_endYear">
+				</br>
+				</br>
+				Percentage &nbsp;&nbsp;&nbsp;: <input type="number"  step="any" name="per">
+		     </fieldset>
+			 </br>
+			 <fieldset>
+			    <legend><u>GRADUATION INFORMATION</u> : </legend>
+				<br/>
+				Course &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="UG_course">
+				</br>
+				</br>
+				University &nbsp;&nbsp;: <input type="text" name="UG_university">
+				</br>
+				</br>
+				<!--Start Month : <input type="text" name="UG_sMonth">
+				</br>
+				</br>-->
+				Start Year &nbsp;&nbsp;&nbsp;: <input type="text" name="UG_startYear">
+				</br>
+				</br>
+				<!--End Month &nbsp;: <input type="text" name="UG_eMonth">
+				</br>
+				</br>-->
+				End Year &nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="UG_endYear">
+		     </fieldset>
+			 </br>
+			 <fieldset>
+			    <legend><u>POST-GRADUATION INFORMATION</u> : </legend>
+				<br/>
+				Course &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="PG_course">
+				</br>
+				</br>
+				University &nbsp;&nbsp;: <input type="text" name="PG_university">
+				</br>
+				</br>
+			<!--	Start Month : <input type="text" name="PG_sMonth">
+				</br>
+				</br> -->
+				Start Year &nbsp;&nbsp;&nbsp;: <input type="text" name="PG_startYear">
+				</br>
+				</br>
+			<!--	End Month &nbsp;: <input type="text" name="PG_eMonth">
+				</br>
+				</br>-->
+				End Year &nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="PG_endYear">
+		     </fieldset>
+			 </br>
+			 <fieldset>
+			     <legend><u>INTERESTS INFORMATION</u> : </legend>
+			     <br/>
+				 <label>Interest 1&nbsp;&nbsp;:</label></br> 
+				 <input name="img1" type="file"  required>
+				 <br/>
+				 <br/>
+				 <label>Interest 2&nbsp;&nbsp;:</label></br> 
+				 <input name="img2" type="file"  >
+				 <br/>
+				 <br/>
+				 <label>Interest 3&nbsp;&nbsp;:</label></br> 
+				 <input name="img3" type="file"  >
+				 <br/>
+				 <br/>
+				 <label>Interest 4&nbsp;&nbsp;:</label></br> 
+				 <input name="img4" type="file"  >
+				 <br/>
+				 <br/>
+				 <label>Interest 5&nbsp;&nbsp;:</label></br> 
+				 <input name="img5" type="file" >
+				 <br/>
+				 <br/>
+				 <label>Interest 6&nbsp;&nbsp;:</label></br> 
+				 <input name="img6" type="file" >
+				 <br/>
+				 <br/> 
+			 </fieldset>
+			 <br>
+			 <input type="submit" value="Submit" />
+          </form>
+
+	<!--<form  enctype="multipart/form-data" action="insertTOdb.php" method="post" >
+		<p><u>PERSONAL DETAILS</u></p></br></br>
+		First Name: <input type="text" name="f_name"></br>
+		Last Name : <input type="text" name="l_name"></br>
+		<label>Add Your Image:</label></br> 
+		<input name="userImage" type="file" /></br>
+		DOB       : <input type="date" name="DOB"></br>
+		Email     : <input type="email" name="Email"></br>
+		About Yourself :</br><textarea name="about" rows="20" cols="70">Descreibe yourself here...</textarea></br></br>
+		
+		<p><u>SOCIAL MEDIA PROFILE LINKS</u></p></br></br>
+		Facebook : <input type="text" name="fb"></br>
+		LinkedIn : <input type="text" name="in"></br>
+		Twitter : <input type="text" name="twitter"></br>
+		Github : <input type="text" name="github"></br>
+		Instagram : <input type="text" name="insta"></br>
+		</br>
+					 
+		<p><u>SKILLS DETAILS</u></p></br></br>
+		HTML : <input type="number" name="html"></br>
+		CSS : <input type="number" name="css"></br>
+		PHP : <input type="number" name="php"></br>
+		C++ : <input type="number" name="cpp"></br>
+		Java : <input type="number" name="java"></br>
+		Python : <input type="number" name="python"></br></br>
+		
+		
+		<p><u>MATRICULATION DETAILS</u></p></br></br>
+		School Name: <input type="text" name="X_school"></br>
+		Start Month: <input type="text" name="X_sMonth"></br>
+		Start Year : <input type="text" name="X_startYear"></br>
+		End Month: <input type="text" name="X_eMonth"></br>
+		End Year   : <input type="text" name="X_endYear"></br>
+		CGPA : <input type="number"  step="any" name="cgpa"></br>
+		</br>
+		
+		<p><u>INTERMEDIATE DETAILS</u></p></br></br>
+		School Name: <input type="text" name="Xll_school"></br>
+		Start Month: <input type="text" name="Xll_sMonth"></br>
+		Start Year : <input type="text" name="Xll_startYear"></br>
+		End Month: <input type="text" name="Xll_eMonth"></br>
+		End Year   : <input type="text" name="Xll_endYear"></br>
+		Percentage : <input type="number" step="any" name="per"></br>
+		</br>
+		
+		<p><u>GRADUATION DETAILS</u></p></br></br>
+		Course     : <input type="text" name="UG_course"></br>
+		University : <input type="text" name="UG_university"></br>
+		Start Month: <input type="text" name="UG_sMonth"></br>
+		Start Year : <input type="text" name="UG_startYear"></br>
+		End Month: <input type="text" name="UG_eMonth"></br>
+		End Year   : <input type="text" name="UG_endYear"></br></br>
+		
+		<p><u>POST-GRADUATION DETAILS</u></p></br></br>
+		Course     : <input type="text" name="PG_course"></br>
+		University : <input type="text" name="PG_university"></br>
+		Start Month: <input type="text" name="PG_sMonth"></br>
+		Start Year : <input type="text" name="PG_startYear"></br>
+		End Month: <input type="text" name="PG_eMonth"></br>
+		End Year   : <input type="text" name="PG_endYear"></br></br>
+		
+		
+		<input type="submit" value="Submit" />
+	</form>-->
+
+</body>
+</html>
+
